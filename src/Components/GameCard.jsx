@@ -1,4 +1,5 @@
 import re0 from "../Assets/resident_evil_0.png";
+import "../styles/GameCard.css";
 export default function () {
 	return (
 		<>
@@ -11,14 +12,14 @@ export default function () {
 						facilis perspiciatis numquam tempore delectus itaque sunt.
 					</h3>
 				</div>
-				<div className="image-container">
-					<img className="game-img" src={re0}></img>
-				</div>
 				<div className="links-container">
 					<a>Link 1</a>
 					<a>Link 2</a>
 					<a>Link 3</a>
 					<a>Link 4</a>
+				</div>
+				<div className="image-container">
+					<img className="game-img" src={re0}></img>
 				</div>
 			</section>
 		</>
