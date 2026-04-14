@@ -1,0 +1,9 @@
+#footer-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-misc {
+    display: flex;
+    flex-direction: row;
+}
