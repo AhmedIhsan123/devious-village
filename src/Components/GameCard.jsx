@@ -1,27 +1,33 @@
-import re0 from "../Assets/resident_evil_0.png";
 import "../styles/GameCard.css";
-export default function () {
+
+export default function GameCard({
+	title,
+	subtitle,
+	description,
+	smallDescription,
+	links,
+	image,
+}) {
 	return (
-		<>
-			<section className="main-container">
-				<div className="about-container">
-					<h6>Capcom</h6>
-					<h1>Resident Evil 0</h1>
-					<h3>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eius
-						facilis perspiciatis numquam tempore delectus itaque sunt.
-					</h3>
-				</div>
-				<div className="links-container">
-					<a>Link 1</a>
-					<a>Link 2</a>
-					<a>Link 3</a>
-					<a>Link 4</a>
-				</div>
-				<div className="image-container">
-					<img className="game-img" src={re0}></img>
-				</div>
-			</section>
-		</>
+		<section className="main-container">
+			<div className="about-container">
+				<h6>{subtitle}</h6>
+				<h1>{title}</h1>
+				<h3>{smallDescription}</h3>
+			</div>
+
+			<div className="links-container">
+				{links.map((link, index) => (
+					<a key={index} href={link.url}>
+						{link.label}
+					</a>
+				))}
+			</div>
+
+			<div className="image-container">
+				<img className="game-img" src={image} alt={title} />
+				<p>{description}</p>
+			</div>
+		</section>
 	);
 }
