@@ -1,3 +1,4 @@
+import re0 from "../Assets/resident_evil_0.png";
 export default function () {
 	return (
 		<>
@@ -11,7 +12,7 @@ export default function () {
 					</h3>
 				</div>
 				<div className="image-container">
-					<img></img>
+					<img className="game-img" src={re0}></img>
 				</div>
 				<div className="links-container">
 					<a>Link 1</a>
