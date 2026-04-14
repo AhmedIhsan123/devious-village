@@ -10,7 +10,7 @@ export default function History() {
                     <button type="button"><a href="#">View Store</a></button>
                 </div>
             </div>
-            <img src="#"></img>
+            <img src="https://bloody-disgusting.com/wp-content/uploads/2016/08/Resident-Evil-Franchise.jpg" alt="The residents are evil!"></img>
         </div>
     </>
 }
