@@ -1,9 +1,10 @@
 #footer-layout {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 #footer-misc {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
 }
