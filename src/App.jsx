@@ -4,8 +4,8 @@ import History from "./Components/History.jsx";
 export default function () {
 	return (
 		<>
-      <Header />
-      <History />
+			<Header />
+			<History />
 			<GameCard></GameCard>
 		</>
 	);

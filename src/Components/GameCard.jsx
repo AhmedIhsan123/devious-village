@@ -10,6 +10,9 @@ export default function () {
 						facilis perspiciatis numquam tempore delectus itaque sunt.
 					</h3>
 				</div>
+				<div className="image-container">
+					<img></img>
+				</div>
 				<div className="links-container">
 					<a>Link 1</a>
 					<a>Link 2</a>
