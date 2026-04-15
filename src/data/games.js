@@ -69,7 +69,7 @@ export const games = [
 		links: [
 			{
 				label: "Wiki",
-				url: "https://residentevil.fandom.com/wiki/Resident_Evil_3",
+				url: "https://residentevil.fandom.com/wiki/Resident_Evil_3:_Nemesis",
 			},
 		],
 	},
