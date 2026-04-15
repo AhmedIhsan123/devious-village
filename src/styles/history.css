@@ -1,9 +1,0 @@
-#history-layout {
-    display: flex;
-    flex-direction: row;
-}
-
-img {
-    width: 50%;
-    object-fit: cover;
-}
