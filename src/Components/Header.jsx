@@ -1,5 +1,13 @@
+import "../styles/Header.css";
 export default function Header() {
-    return <>
-        <h1>DEVIOUS VILLAGE</h1>
-    </>
+	return (
+		<>
+			<div className="header-container">
+				<h1>
+					<span className="resident-text">De</span>vious{" "}
+					<span className="resident-text">Vi</span>llage
+				</h1>
+			</div>
+		</>
+	);
 }

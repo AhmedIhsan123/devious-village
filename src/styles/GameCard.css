@@ -1,0 +1,143 @@
+.main-container {
+	position: relative;
+	width: 100%;
+	min-height: 90vh;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	display: flex;
+	align-items: flex-end;
+
+	overflow: hidden;
+	border-bottom: 2px solid red;
+}
+
+/* base dark layer */
+.overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	z-index: 1;
+	transition: 0.4s ease;
+}
+
+/* cinematic bottom-to-top fade */
+.overlay::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+
+	background: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.95) 0%,
+		rgba(0, 0, 0, 0.5) 40%,
+		rgba(0, 0, 0, 0) 75%
+	);
+
+	opacity: 0.8;
+	transition: opacity 0.4s ease;
+}
+
+/* content layer */
+.content {
+	position: relative;
+	z-index: 2;
+
+	width: 100%;
+	padding: 5rem 6rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+
+	transform: translateY(40px);
+	opacity: 0.6;
+
+	transition: all 0.4s ease;
+}
+
+/* hover effects */
+.main-container:hover .overlay {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.main-container:hover .overlay::after {
+	opacity: 1;
+}
+
+.main-container:hover .content {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* text */
+.about-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	max-width: 800px;
+}
+
+.about-container h6 {
+	color: #aaa;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.about-container h1 {
+	font-size: 3rem;
+	color: #ff2e2e;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.about-container h3 {
+	color: #ddd;
+	font-weight: 400;
+}
+
+/* links */
+.links-container {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.links-container a {
+	text-decoration: none;
+	color: #ff2e2e;
+
+	border: 1px solid #ff2e2e;
+	padding: 0.6rem 1.2rem;
+	border-radius: 6px;
+
+	transition: 0.2s ease;
+	font-weight: 600;
+}
+
+.links-container a:hover {
+	background: #ff2e2e;
+	color: #000;
+	transform: translateY(-2px);
+}
+
+/* description */
+.description p {
+	max-width: 700px;
+	color: #ddd;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+	.content {
+		padding: 3rem 2rem;
+	}
+
+	.about-container h1 {
+		font-size: 2.2rem;
+	}
+}

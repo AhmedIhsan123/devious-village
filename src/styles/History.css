@@ -1,0 +1,80 @@
+#history-layout {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 3rem;
+
+	padding: 4rem 6rem;
+	min-height: 80vh;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	color: #e6e6e6;
+	overflow: hidden;
+}
+
+/* dark overlay for readability */
+#history-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.65);
+	backdrop-filter: blur(6px);
+	z-index: 0;
+}
+
+#history-content {
+	position: relative;
+	z-index: 1;
+
+	max-width: 650px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+/* rest stays same */
+#history-content h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #ff2e2e;
+	text-transform: uppercase;
+}
+
+#history-content p {
+	font-size: 1.1rem;
+	line-height: 1.7;
+	color: #c9c9c9;
+}
+
+#history-links {
+	display: flex;
+	gap: 1rem;
+}
+
+#history-links button {
+	background: transparent;
+	border: 1px solid #ff2e2e;
+	padding: 0.75rem 1.25rem;
+	cursor: pointer;
+	transition: all 0.25s ease;
+	border-radius: 6px;
+}
+
+#history-links button a {
+	color: #ff2e2e;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#history-links button:hover {
+	background: #ff2e2e;
+	transform: translateY(-2px);
+}
+
+#history-links button:hover a {
+	color: #0b0b0f;
+}
