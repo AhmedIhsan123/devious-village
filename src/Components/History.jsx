@@ -14,10 +14,14 @@ export default function History() {
 			<div id="history-content">
 				<h1>History of Resident Evil</h1>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-					numquam vero perspiciatis eveniet assumenda asperiores, fugit
-					dignissimos adipisci quo libero laborum architecto atque sequi aliquid
-					eius in dolores incidunt ullam.
+					The Resident Evil trilogy follows the outbreak of the T-virus and the
+					collapse of Raccoon City, as characters like Jill Valentine, Leon
+					Kennedy, and Claire Redfield struggle to survive against zombies and
+					bio-engineered monsters created by the Umbrella Corporation. Across
+					the three games, players explore isolated locations, manage limited
+					resources, and uncover the truth behind the infection, establishing
+					the foundation of survival horror with a mix of tension, storytelling,
+					and strategic gameplay.
 				</p>
 
 				<div id="history-links">

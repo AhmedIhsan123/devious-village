@@ -24,7 +24,7 @@ export default function GameCard({
 
 				<div className="links-container">
 					{links.map((link, index) => (
-						<a key={index} href={link.url}>
+						<a target="blank" key={index} href={link.url}>
 							{link.label}
 						</a>
 					))}
