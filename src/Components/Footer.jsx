@@ -3,7 +3,10 @@ export default function Footer() {
 	return (
 		<>
 			<div id="footer-layout">
-				<p id="footer-logo">LOGO</p>
+				<h1>
+					<span className="resident-text">De</span>vious{" "}
+					<span className="resident-text">Vi</span>llage
+				</h1>
 				<div id="footer-misc">
 					<p>Ahmed Ihsan and Anthony Kravchishin</p>
 					<p>Privacy Policy</p>

@@ -26,12 +26,20 @@ export default function History() {
 
 				<div id="history-links">
 					<button type="button">
-						<a href="https://residentevil.fandom.com/wiki/Resident_Evil_Wiki">
+						<a
+							target="blank"
+							href="https://residentevil.fandom.com/wiki/Resident_Evil_Wiki"
+						>
 							View Wiki
 						</a>
 					</button>
 					<button type="button">
-						<a href="#">View Store</a>
+						<a
+							target="blank"
+							href="https://store.steampowered.com/developer/capcom/list/37722/"
+						>
+							View Store
+						</a>
 					</button>
 				</div>
 			</div>
